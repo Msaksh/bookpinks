@@ -11,7 +11,7 @@ const HeroSection = () => {
         <Box className='ms-32'>
           <Typography className="text-3xl font-medium font-poppins text-black mb-4">Best</Typography>
           <Typography className="text-7xl font-poppins font-bold text-black">Deals on</Typography>
-          <Typography className="text-white text-[12vw] font-black font-montserrat tracking-tighter leading-none">BOOKPINKS!!</Typography>
+          <Typography className="text-white text-9xl font-black font-montserrat tracking-tighter leading-none">BOOKPINKS!!</Typography>
           <Box className='flex items-center justify-between mr-36'>
             <Box>
               <Box className='border rounded-full border-gray-400 bg-white px-6 min-w-[25vw] py-1'>
