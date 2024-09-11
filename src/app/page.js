@@ -11,7 +11,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <Box className=' py-4'>
+    <Box className='pt-4'>
       <HeroSection />
       <Categories />
       <DiscountedBooks />

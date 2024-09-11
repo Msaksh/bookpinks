@@ -16,10 +16,20 @@ import AdbIcon from '@mui/icons-material/Adb';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const pages = ['HOME', 'FEATURED BOOK', 'FREE BOOK', 'ALL BOOKS', 'BLOG'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+
+
 
 function Header() {
+  const pages = [
+    { name: 'HOME', route: '/' },
+    { name: 'FEATURED BOOK', route: '/featured-books' },
+    { name: 'FREE BOOK', route: '/free-book' },
+    { name: 'ALL BOOKS', route: '/all-books' },
+    { name: 'BLOG', route: '/blog' },
+  ];
+
+  const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -73,9 +83,9 @@ function Header() {
               onClose={handleCloseNavMenu}
               sx={{ display: { xs: 'block', md: 'none' } }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography sx={{ textAlign: 'center' }} className='text-black'>{page}</Typography>
+              {pages.map(({ name, route }) => (
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <Link href={route} className='text-black'>{name}</Link>
                 </MenuItem>
               ))}
             </Menu>
@@ -100,15 +110,10 @@ function Header() {
             LOGO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }} className='bg-red-30 gap-5'>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-                className='text-black font-Poppins'
-              >
-                {page}
-              </Button>
+
+
+            {pages.map(({ name, route }) => (
+              <Link href={route} className='text-black'>{name}</Link>
             ))}
           </Box>
 

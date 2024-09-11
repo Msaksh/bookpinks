@@ -25,6 +25,8 @@ module.exports = {
         montserrat: ['var(--font-montserrat)', 'sans-serif'],
         tahoma: ['var(--font-tahoma)', 'sans-serif'],
         playfair: ['var(--font-playfair)', 'serif'],
+        eagleLake: ['var(--font-eaglelake)', 'serif'],
+        caudex: ['var(--font-caudex)', 'serif'],
       },
     },
   },
