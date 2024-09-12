@@ -96,6 +96,11 @@ const Service = () => {
 
       <Box className='bg-[radial-gradient(at_bottom_right,_#FFFFFF_0%,_#0DA8AA_53%)] min-h-screen py-20 '>
         <Typography className="text-[33px] text-center font-caudex text-white font-semibold">Promotion strategy in rural marketing</Typography>
+        <Box className='flex items-center justify-center gap-2 mt-8 mb-10'>
+          <Box className='w-20 h-[2px] bg-[#ffb700]'></Box>
+          <i className="fa fa-star text-[20px] text-[#ffb700]"></i>
+          <Box className='w-20 h-[2px] bg-[#ffb700]'></Box>
+        </Box>
         <Box className='max-w-[1200px] mx-auto px-9 py-3'>
           <Box className='flex items-center bg-white max-w-7xl rounded-2xl px-12 py-10 gap-5 '>
             <Box className='mr-10 border-[3px] p-6 rounded-full border-[#EB008A]'>
@@ -165,12 +170,13 @@ const Service = () => {
       </Box>
 
       <section>
+
         <Box className='bg-black'>
           <Box className='max-w-[1200px] mx-auto flex items-center '>
             <Box className="w-2/5">
               <img src="https://bookpinks.com/wp-content/uploads/2024/06/Untitled-1.png" width={100} height={100} className="w-full h-full" alt="discount" />
             </Box>
-            <Box className='w-3/5 bg-red-200 min-h-[200px] p-10 relative'>
+            <Box className='w-3/5 min-h-[200px] p-10 relative'>
               <Typography className="font-eagleLake font-semibold text-4xl text-center mb-4 text-[#E4322B] italic">This Summer
               </Typography>
               <Typography className="font-caudex font-semibold text-xl text-center mb-4 text-[#F3FFF1]">Exclusive Limited-Time Offer: Enjoy Extra 10% Off! Unlock Special Savings Before Time Runs Out!!!
@@ -191,13 +197,25 @@ const Service = () => {
             </Box>
           </Box>
         </Box>
+
         <Box className='bg-[#ffde71] p-2'>
-          <Typography className="text-2xl text-[#444444] font-poppins text-center">
+          <Typography className="text-2xl text-[#444444] font-semibold font-poppins text-center">
             Use This Coupon Code - SMMR10
           </Typography>
         </Box>
-        <Box className="min-h-screen bg-cover bg-fixed bg-[url('https://bookpinks.com/wp-content/uploads/2023/09/pi%CC%87rem-karaka-jpg.webp')]">
 
+        <Box className="min-h-screen bg-cover bg-fixed bg-[url('https://bookpinks.com/wp-content/uploads/2023/09/pi%CC%87rem-karaka-jpg.webp')]">
+          <Box className='pt-20'>
+            <Typography className="text-white text-[42px] font-caudex font-semibold text-center">
+              Our Affordable Price
+            </Typography>
+            <Box className='flex items-center justify-center'>
+              <Box className='flex flex-col items-center '>
+                <Box className='w-12 h-1 bg-[#f2295b] my-4'></Box>
+                <Typography className="text-center text-white font-poppins">One-Time Payment. Book <br /> your slot now.</Typography>
+              </Box>
+            </Box>
+          </Box>
         </Box>
       </section>
     </Box>
