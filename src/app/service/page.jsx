@@ -1,13 +1,97 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Grid, Typography } from "@mui/material";
 import Image from "next/image";
 import CampaignIcon from '@mui/icons-material/Campaign';
 import ListAltIcon from '@mui/icons-material/ListAlt';
 import MarkEmailReadIcon from '@mui/icons-material/MarkEmailRead';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import PlansCard from "@/components/atoms/plansCard/plansCard.";
 
 const MyComponent = () => (
   <i className="fas fa-pen-nib"></i>
 );
+
+const plansDetail2 =
+{
+  id: 1,
+  title: "Basic",
+  promotion: "25 Day Promotion",
+  originalPrice: 45,
+  discountedPrice: 29,
+  discount: "30% OFF",
+  features: [
+    { name: "Featured Book Listing", included: true },
+    { name: "35k+ Subscriber", included: true },
+    { name: "50 Tweets", included: true },
+    { name: "50 Facebook Post", included: true },
+    { name: "25 Post Instagram", included: true },
+    { name: "Per Day 1 Instagram Story", included: false },
+    { name: "Customized Images", included: false },
+  ],
+  buttonLabel: "Click Here",
+  bg: "#f27474"
+}
+
+const plansDetail = [
+  {
+    id: 1,
+    title: "Basic",
+    promotion: "25 Day Promotion",
+    originalPrice: 45,
+    discountedPrice: 29,
+    discount: "30% OFF",
+    features: [
+      { name: "Featured Book Listing", included: true },
+      { name: "35k+ Subscriber", included: true },
+      { name: "50 Tweets", included: true },
+      { name: "50 Facebook Post", included: true },
+      { name: "25 Post Instagram", included: true },
+      { name: "Per Day 1 Instagram Story", included: false },
+      { name: "Customized Images", included: false },
+    ],
+    buttonLabel: "Click Here",
+    bg: "#f27474"
+  },
+  {
+    id: 2,
+    title: "Premium",
+    promotion: "50 Day Promotion",
+    originalPrice: 75,
+    discountedPrice: 49,
+    discount: "30% OFF",
+    features: [
+      { name: "Featured Book Listing", included: true },
+      { name: "62k+ Subscriber", included: true },
+      { name: "150 Tweets", included: true },
+      { name: "100 Facebook Post", included: true },
+      { name: "50 Post Instagram", included: true },
+      { name: "Per Day 1 Instagram Story", included: true },
+      { name: "Customized Images", included: true },
+    ],
+    buttonLabel: "Click Here",
+    bg: "#bd9703"
+  },
+  {
+    id: 3,
+    title: "Free & Discounted Book",
+    promotion: "20 Day Promotion",
+    originalPrice: 30,
+    discountedPrice: 21,
+    discount: "30% OFF",
+    features: [
+      { name: "Featured Book Listing", included: true },
+      { name: "50k+ Subscriber", included: true },
+      { name: "40 Tweets", included: true },
+      { name: "40 Facebook Post", included: true },
+      { name: "20 Post Instagram", included: true },
+      { name: "Per Day 1 Instagram Story", included: false },
+      { name: "Customized Images", included: false },
+    ],
+    buttonLabel: "Click Here",
+    bg: "#e61919"
+  },
+  // You can add more plans similarly
+];
+
 
 
 const Service = () => {
@@ -205,16 +289,31 @@ const Service = () => {
         </Box>
 
         <Box className="min-h-screen bg-cover bg-fixed bg-[url('https://bookpinks.com/wp-content/uploads/2023/09/pi%CC%87rem-karaka-jpg.webp')]">
-          <Box className='pt-20'>
+          <Box className='py-20 max-w-[1200px] mx-auto'>
             <Typography className="text-white text-[42px] font-caudex font-semibold text-center">
               Our Affordable Price
             </Typography>
-            <Box className='flex items-center justify-center'>
+            <Box className='flex items-center justify-center mb-20'>
               <Box className='flex flex-col items-center '>
                 <Box className='w-12 h-1 bg-[#f2295b] my-4'></Box>
                 <Typography className="text-center text-white font-poppins">One-Time Payment. Book <br /> your slot now.</Typography>
               </Box>
             </Box>
+
+            <Grid container spacing={3}>
+              {plansDetail.map((item, index) => (
+                <Grid item xs={12} sm={6} md={4} key={index}>
+                  <PlansCard plan={item} />
+                </Grid>
+
+              ))}
+
+              {/* <Grid item xs={12} md={4}>
+                <PlansCard plan={plansDetail2} />
+              </Grid> */}
+
+            </Grid>
+
           </Box>
         </Box>
       </section>

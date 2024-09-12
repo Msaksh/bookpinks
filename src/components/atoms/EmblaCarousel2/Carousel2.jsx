@@ -41,7 +41,7 @@ const Carousel2 = ({ slides }) => {
         <div className="new-embla__container">
           {slides.map((slide, index) => (
             <div className="new-embla__slide" key={index}>
-              <div className="new-embla__slide__inner group  relative h-[300px] bg-red-400">
+              <div className="new-embla__slide__inner group  relative h-[300px]">
                 <div className='w-full h-40'>
                   <img
                     src={slide.feature_image}
