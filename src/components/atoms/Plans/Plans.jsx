@@ -1,7 +1,6 @@
-'use client'
 import { Box } from "@mui/material";
 
-const PlansCard = ({ plan }) => {
+const Plans = ({ plan }) => {
   return (
     <Box className="bg-[url('https://bookpinks.com/wp-content/uploads/2023/09/Aauef-jpg.webp')] h-full bg-cover shadow-lg rounded-lg p-1 w-full">
       <Box className={` rounded-t-lg py-4 text-center`} style={{ backgroundColor: plan.bg }}>
@@ -41,4 +40,4 @@ const PlansCard = ({ plan }) => {
   )
 }
 
-export default PlansCard;
+export default Plans;

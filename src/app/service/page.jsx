@@ -4,7 +4,7 @@ import CampaignIcon from '@mui/icons-material/Campaign';
 import ListAltIcon from '@mui/icons-material/ListAlt';
 import MarkEmailReadIcon from '@mui/icons-material/MarkEmailRead';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import PlansCard from "@/components/atoms/plansCard/plansCard.";
+import Plans from "@/components/atoms/Plans/Plans";
 
 const MyComponent = () => (
   <i className="fas fa-pen-nib"></i>
@@ -303,14 +303,12 @@ const Service = () => {
             <Grid container spacing={3}>
               {plansDetail.map((item, index) => (
                 <Grid item xs={12} sm={6} md={4} key={index}>
-                  <PlansCard plan={item} />
+
+                  <Plans plan={item} />
                 </Grid>
 
               ))}
 
-              {/* <Grid item xs={12} md={4}>
-                <PlansCard plan={plansDetail2} />
-              </Grid> */}
 
             </Grid>
 
