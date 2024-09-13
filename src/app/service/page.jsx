@@ -113,7 +113,7 @@ const Service = () => {
                 </Box>
               </Box>
 
-              <Box className="text-center  flex-col md:flex-row items-start md:items-center gap-5">
+              <Box className="text-center flex flex-col md:flex-row items-start md:items-center gap-5">
                 <Box className="flex justify-start md:justify-center h-[63px] w-[64px] p-5 rounded-full border-[3px] group hover:border-teal-300 duration-300 border-teal-600 md:mx-auto mb-4">
                   <i className="fas fa-mail-bulk text-teal-600 text-xl group-hover:text-teal-300 duration-300"></i>
                 </Box>
@@ -125,7 +125,7 @@ const Service = () => {
                 </Box>
               </Box>
 
-              <Box className="text-center flex-col md:flex-row items-start md:items-center gap-5">
+              <Box className="text-center flex flex-col md:flex-row items-start md:items-center gap-5">
                 <Box className="flex justify-start md:justify-center h-[63px] w-[64px] p-5 rounded-full border-[3px] group hover:border-teal-300 duration-300 border-teal-600 md:mx-auto mb-4">
                   <i className="fas fa-pen-nib text-teal-600 text-xl group-hover:text-teal-300 duration-300"></i>
                 </Box>
@@ -137,7 +137,7 @@ const Service = () => {
                 </Box>
               </Box>
 
-              <Box className="text-center flex-col md:flex-row items-start md:items-center gap-5">
+              <Box className="text-center flex flex-col md:flex-row items-start md:items-center gap-5">
                 <Box className="flex justify-start md:justify-center h-[63px] w-[64px] p-5 rounded-full border-[3px] group hover:border-teal-300 duration-300 border-teal-600 md:mx-auto mb-4">
                   <i className="fab fa-rocketchat text-teal-600 text-xl group-hover:text-teal-300 duration-300 "></i>
                 </Box>

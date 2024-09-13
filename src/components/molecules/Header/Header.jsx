@@ -118,7 +118,7 @@ function Header() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Link href='/services'>
+            <Link href='/service'>
               <Typography className='text-text-pink border border-text-pink rounded p-2 px-4 cursor-pointer font-[arial] font-semibold text-xs'>
                 FOR AUTHORS
               </Typography>
