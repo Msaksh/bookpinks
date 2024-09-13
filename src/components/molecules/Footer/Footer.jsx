@@ -1,8 +1,23 @@
+'use client'
+
 import { Box, Button, Grid, TextField, Typography } from "@mui/material";
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import PinterestIcon from '@mui/icons-material/Pinterest';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import { styled } from '@mui/system';
+
+const CustomTextField = styled(TextField)({
+  '& .MuiInput-underline:before': {
+    borderBottom: 'none',
+  },
+  '& .MuiInput-underline:after': {
+    borderBottom: 'none',
+  },
+  '& .MuiInput-underline:hover:not(.Mui-disabled):before': {
+    borderBottom: 'none',
+  },
+});
 
 const Footer = () => {
   return (
@@ -11,11 +26,11 @@ const Footer = () => {
         <Grid xs={12} md={7} className="">
           <Grid container spacing={2} className=" mt-0 ml-0">
             <Grid xs={12} md={4} className="mb-5">
-              <Box className='mb-10'>
+              <Box className='mb-3 md:mb-10'>
                 <img src="/logo/book-pinks-high-logo-min.webp" className="w-52 h-full" width={100} height={100} alt="" />
               </Box>
               <Typography className='font-poppins text-sm text-[#38393a] mb-10'>Info@bookpinks.com              </Typography>
-              <Box className='flex items-center gap-2 mt-32'>
+              <Box className='flex items-center gap-2 md:mt-32'>
                 <Box className='w-6 h-6 rounded-full bg-[#37528d] flex items-center justify-center cursor-pointer hover:bg-[#3c5998]'>
                   <FacebookIcon className="text-white w-4 h-4" />
                 </Box>
@@ -30,11 +45,11 @@ const Footer = () => {
                 </Box>
               </Box>
             </Grid>
-            <Grid xs={12} md={4} className="mb-7">
+            <Grid xs={12} md={4} className="mb-7 mt-10 md:mt-0">
               <Typography className="text-xl font-poppins font-semibold text-[#38393A] mb-6 px-2">Pages</Typography>
               <Box className='w-10 h-[3px] bg-primary-pink mb-5 ml-2'></Box>
               <Box className='flex flex-col justify-start'>
-                <Typography className="text-[15px] font-poppins text-[#38393A] uppercase p-2 cursor-pointer hover:italic hover:text-primary-pink hover:font-medium">Home Page</Typography>
+                <Typography className="text-[15px] font-poppins text-[#414345] uppercase p-2 cursor-pointer hover:italic hover:text-primary-pink hover:font-medium">Home Page</Typography>
                 <Typography className="text-[15px] font-poppins text-[#38393A] uppercase p-2 cursor-pointer hover:italic hover:text-primary-pink hover:font-medium">About Us</Typography>
                 <Typography className="text-[15px] font-poppins text-[#38393A] uppercase p-2 cursor-pointer hover:italic hover:text-primary-pink hover:font-medium">Service</Typography>
                 <Typography className="text-[15px] font-poppins text-[#38393A] uppercase p-2 cursor-pointer hover:italic hover:text-primary-pink hover:font-medium">Contact Us</Typography>
@@ -59,7 +74,12 @@ const Footer = () => {
             <Typography className="text-[15px] font-poppins text-[#38393A] p-2">For Latest News & Updates</Typography>
             <Box className='mb-10'>
               <Box className='border rounded-full border-gray-400 bg-slate-100 px-6 max-w-[386px] py-1'>
-                <TextField id="standard-basic" placeholder="Enter Email" label="" variant="standard" />
+                <CustomTextField
+                  id="standard-basic"
+                  placeholder="Enter Email"
+                  label=""
+                  variant="standard"
+                />
                 <Button className="bg-red-500 text-white rounded-full font-semibold px-4 ms-0 md:ms-10">
                   SUBSCRIBE
                 </Button>

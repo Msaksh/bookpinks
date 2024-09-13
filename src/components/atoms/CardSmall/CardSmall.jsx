@@ -21,7 +21,7 @@ const CardSmall = ({ bgColor1, bgColor2, text1, text2, text3, img }) => {
 
   return (
     <Box
-      className="rounded-2xl pt-32 px-7 pb-12 relative transition-all duration-300 ease-in-out
+      className="rounded-2xl pt-12 md:pt-32 px-7 pb-12 relative transition-all duration-300 ease-in-out
                  hover:shadow-lg hover:shadow-white/25 hover:-translate-y-1"
       style={getBackgroundStyle()}
     >

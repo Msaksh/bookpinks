@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 
 const Plans = ({ plan }) => {
   return (
-    <Box className="bg-[url('https://bookpinks.com/wp-content/uploads/2023/09/Aauef-jpg.webp')] h-full bg-cover shadow-lg rounded-lg p-1 w-full">
+    <Box className="bg-[url('https://bookpinks.com/wp-content/uploads/2023/09/Aauef-jpg.webp')] h-full bg-cover shadow-lg rounded-lg p-1 w-11/12 mx-auto  md:w-full">
       <Box className={` rounded-t-lg py-4 text-center`} style={{ backgroundColor: plan.bg }}>
         <h2 className="text-xl font-bold text-white">{plan.title}</h2>
         <p className="text-sm text-white">{plan.promotion}</p>

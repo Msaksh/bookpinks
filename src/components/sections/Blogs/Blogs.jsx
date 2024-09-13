@@ -53,7 +53,7 @@ const Blogs = () => {
 
   return (
     <Box className='max-w-7xl mx-auto my-28'>
-      <Typography className='text-[38px] font-poppins font-semibold text-[#444444] text-center mb-12'>New Blogs</Typography>
+      <Typography className='text-xl md:text-[38px] font-poppins font-semibold text-[#444444] text-center md:mb-12'>New Blogs</Typography>
       <Carousel2 slides={sampleSlides} />
       <Box className='flex items-center justify-end'>
         <Box className='flex items-center gap-3 cursor-pointer w-fit group'>

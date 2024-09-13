@@ -126,6 +126,18 @@ body {
     flex: 0 0 50%;
     /* 2 slides on small screens (tablets in portrait mode) */
   }
+
+}
+
+@media (max-width: 768px) {
+
+  .embla__button--prev {
+    left: 0px;
+  }
+
+  .embla__button--next {
+    right: 0px;
+  }
 }
 
 @media (min-width: 768px) {

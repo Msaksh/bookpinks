@@ -56,7 +56,7 @@ const Blog = () => {
       <Grid container spacing={2} >
 
         {sampleSlides.map((slide, index) => (
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid item xs={12} sm={6} md={4} key={index} data-aos="zoom-in">
             <BlogCard slide={slide} index={index} />
           </Grid>
         ))}

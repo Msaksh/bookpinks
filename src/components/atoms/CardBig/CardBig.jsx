@@ -21,7 +21,7 @@ const CardBig = ({ bgColor1, bgColor2, text1, text2, text3, img }) => {
 
   return (
     <Box
-      className="rounded-2xl pt-32 px-7 pb-12 relative transition-all duration-300 ease-in-out
+      className="rounded-2xl pt-12 md:pt-32 px-7 pb-12 relative transition-all duration-300 ease-in-out
                  hover:shadow-lg hover:shadow-white/25 hover:-translate-y-1"
       style={getBackgroundStyle()}
     >
@@ -31,8 +31,8 @@ const CardBig = ({ bgColor1, bgColor2, text1, text2, text3, img }) => {
       <Link href='#' className="no-underline">
         <Typography className="text-xs text-white font-raleway font-medium uppercase bg-red-500 w-fit py-3 px-6 no-underline rounded-full mb-4">Browse</Typography>
       </Link>
-      <Box className='absolute left-96 top-14 '>
-        <img src={img} className="w-[200px] h-[300px] object-cover" width={100} height={100} alt="Book" />
+      <Box className='absolute left-48 md:left-96 top-10 md:top-14 '>
+        <img src={img} className="w-[150px] g-[200px] md:w-[200px] md:h-[300px] object-cover" width={100} height={100} alt="Book" />
       </Box>
     </Box>
   )

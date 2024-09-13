@@ -3,6 +3,8 @@ import "./globals.css";
 import Header from "@/components/molecules/Header/Header";
 import TopNav from "@/components/molecules/TopNav/TopNav";
 import Footer from "@/components/molecules/Footer/Footer";
+import AOSInitializer from "@/components/atoms/AOSInitializer/AOSInitializer";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -51,6 +53,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body id="__next" className={`${poppins.variable} ${raleway.variable} ${inter.className} ${montserrat.variable} ${playfairDisplay.variable} ${eagleLake.variable}  ${caudex.variable} font-sans`}>
+        <AOSInitializer />
         <TopNav />
         <Header />
         {children}

@@ -52,11 +52,11 @@ const FeaturedBook = () => {
   ];
 
   return (
-    <Box className='mt-20 px-8'>
+    <Box className='mt-20 px-2 md:px-8'>
       <Typography className='text-center text-4xl text-[#444444] font-poppins font-semibold mb-16'>Featured Books</Typography>
       <Grid container spacing={2}>
         {books.map((book, index) => (
-          <Grid item xs={12} sm={6} md={3} lg={2} key={index}>
+          <Grid item xs={6} sm={6} md={3} lg={2} key={index} data-aos="zoom-in">
             <BookCard
               image={book.image}
               title={book.title}
