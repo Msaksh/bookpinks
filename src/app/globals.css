@@ -300,3 +300,14 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: rgb(179, 179, 179) !important;
+  /* This changes the color of the arrow icons */
+}

@@ -97,7 +97,7 @@ const DiscountedBooks = () => {
 
 
   return (
-    <Box className='min-h-[100vh] bg-black hover:bg-[#ffc527] duration-500 py-12'>
+    <Box className='bg-black hover:bg-[#ffc527] duration-500 py-12'>
       <Box className='max-w-7xl mx-auto'>
 
         <Typography className="text-4xl text-white font-semibold font-poppins text-center mb-12">Free & Discounted Book</Typography>

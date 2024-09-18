@@ -1,10 +1,22 @@
+'use client'
 import BookCard from "@/components/atoms/BookCard/BookCard";
 import BasicMenu from "@/components/atoms/Dropdown/Dropdown";
-import { Box, Grid, Typography } from "@mui/material"
+import { Box, Container, Grid, Typography } from "@mui/material"
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
+import { useState } from "react";
 
 const FeaturedBooksPage = () => {
+
+  const [age, setAge] = useState('');
+
+  const handleChange = (event) => {
+    setAge(event.target.value);
+  };
 
   const books = [
     {
@@ -59,7 +71,26 @@ const FeaturedBooksPage = () => {
     <Box className='mt-20 px-8'>
       <Typography className='text-center text-4xl text-[#444444] font-poppins font-semibold mb-16'>Featured Books</Typography>
       <Box className='flex items-center justify-end max-w-7xl mx-auto mb-10'>
-        <BasicMenu title={'Default Sorting'} options={optionsAre} />
+
+        <Box sx={{ minWidth: 220 }} className='mr-6'>
+          <FormControl fullWidth>
+            <InputLabel id="demo-simple-select-label">Default Sorting</InputLabel>
+            <Select
+              labelId="demo-simple-select-label"
+              id="demo-simple-select"
+              value={age}
+              label="Default Sorting"
+              onChange={handleChange}
+            >
+              {optionsAre.map((option, index) => (
+                <MenuItem key={index} value={10}>{option}</MenuItem>
+              ))}
+
+            </Select>
+          </FormControl>
+        </Box>
+
+
       </Box>
       <Grid container spacing={4} justifyContent={'center'} className="mb-20">
         {books.map((book, index) => (

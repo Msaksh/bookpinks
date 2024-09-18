@@ -11,7 +11,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <Box className='pt-4'>
+    <Box >
       <HeroSection />
       <Categories />
       <DiscountedBooks />

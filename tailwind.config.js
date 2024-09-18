@@ -1,3 +1,5 @@
+
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -27,6 +29,7 @@ module.exports = {
         playfair: ['var(--font-playfair)', 'serif'],
         eagleLake: ['var(--font-eaglelake)', 'serif'],
         caudex: ['var(--font-caudex)', 'serif'],
+        roboto_slab: ['var(--font-roboto_slab)', 'serif'],
       },
     },
   },

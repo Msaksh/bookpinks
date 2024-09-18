@@ -37,9 +37,9 @@ const FeaturedBook = () => {
       price: '1.99'
     },
     {
-      image: 'https://bookpinks.com/wp-content/uploads/2024/09/FORBIDDEN-Love-Attractions.jpg',
-      title: 'FORBIDDEN Love Attractions: A Steamy Billionaire Romance Collection',
-      description: 'https://example.com/slide4',
+      image: 'https://bookpinks.com/wp-content/uploads/2024/08/Billionaires-Forbidden-Attraction.jpg',
+      title: 'Billionaire’s Forbidden Attraction: A Second Chance Enemies to Lovers with Benefits Romance',
+      description: 'https://example.com/slide1',
       price: '1.99'
     },
     {
@@ -53,7 +53,7 @@ const FeaturedBook = () => {
 
   return (
     <Box className='mt-20 px-2 md:px-8'>
-      <Typography className='text-center text-4xl text-[#444444] font-poppins font-semibold mb-16'>Featured Books</Typography>
+      <Typography className='text-center text-[2.375rem] text-[#444444] font-poppins font-semibold mb-16'>Featured Books</Typography>
       <Grid container spacing={2}>
         {books.map((book, index) => (
           <Grid item xs={6} sm={6} md={3} lg={2} key={index} data-aos="zoom-in">
